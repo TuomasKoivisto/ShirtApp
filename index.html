@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Shirt App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body>
+    <div class="app-page" data-page="start-screen">
+      <div class="app-content page" id="starting-page-content">
+          <div class="app-section section" id="starting-page-section">
+             <img src="img/logo.png" id="logo">
+              <h2>the</h2>
+              <br>
+              <h1>Shirt App</h1>
+            </div>
+        </div>
+      </div>
+
+
+    <div class="app-page" data-page="signin-page">
+      <div class="app-content page">
+          <div class="app-section section">
+        <h1>Shirt App</h1>
+        <div class="margin-top10"></div>
+        <form>
+              <input class="input" type="email" placeholder="username" required><br>
+              <input class="input" type="password" placeholder="password" required><br>
+            <div class="app-button app-submit" id="submit">Sign In</div>
+        </form>
+        <div class="app-button" id="not-registered" data-target="register-page">Not registered yet?
+            </div>
+          <div class="app-button" data-target="steps-page">Skip</div>
+      </div>
+    </div>
+    </div>
+
+    <div class="app-page" data-page="register-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+            <div class="margin-top10"></div>
+            <div id="register-content">
+            <p id="paragraph1">We always seek to provide our customers with shirts that fit them perfectly. In order to ensure this, we have designed this app for customers who have their measurements already taken by our personnel.</p>
+            <div class="margin-top5"></div>
+            <p>If you wish to register for this app, please fill your email address below and we will be in touch with you.</p>
+            <div class="margin-top10"></div>
+            <form>
+                <input class="input"name="name" type="text" placeholder="full name" required>
+                <input class="input" name="number" type="number" placeholder="telephone number" required>
+                <input class="input" name="email" type="email" placeholder="email address" required>
+                <div class="app-button app-submit" id="register">Register</div>
+            </form>
+            <div class="app-button" id="already-registered" data-target="signin-page">Sign In
+            </div>
+            </div>
+            </div>
+          <div class="app-section section" id="message"></div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="steps-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Select shirt details</h3>
+        <div id="steps-div2">
+        <div class="inline-block">Fabric
+
+            <div class="app-button green" id="confirmed-fabric-select" data-target="fabric-page">Choose</div>
+            <pre width="12" id="confirmed-fabric-name">
+
+            </pre>
+            <div><img id="confirmed-fabric-image" class="blank-image" src="img/white.jpg"></div>
+            </div>
+
+
+        <div class="inline-block">Collar
+            <div class="app-button green" id="confirmed-collar-select" data-target="collar-page">Choose</div>
+            <pre width="12" id="confirmed-collar-name">
+
+            </pre>
+            <div><img id="confirmed-collar-image" class="blank-image" src="img/white.jpg"></div>
+
+
+            </div>
+
+
+
+        <div class="inline-block">Cuff
+            <div class="app-button green" id="confirmed-cuff-select" data-target="cuff-page">Choose</div>
+            <pre width="12" id="confirmed-cuff-name">
+
+            </pre>
+            <div><img id="confirmed-cuff-image" class="blank-image" src="img/white.jpg"></div>
+
+            </div>
+
+        <div class="inline-block">Placket
+            <div class="app-button green" id="confirmed-placket-select" data-target="placket-page">Choose</div>
+            <pre width="12" id="confirmed-placket-name">
+
+            </pre>
+            <div><img id="confirmed-placket-image" class="blank-image" src="img/white.jpg"></div>
+
+            </div>
+
+            </div>
+            <div id="footer">
+            <div id="clear-button" class="app-button">Clear details</div>
+            <div id="add-to-basket" class="app-button">Add to my basket</div>
+            <div class="app-button" data-target="basket-page">view my basket</div>
+          <div class="app-button" data-target="signin-page">Sign out</div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="app-page" data-page="fabric-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Select fabric (1/2) - The Classic Collection</h3>
+        <div class="choice-container">
+        <figure class="inline">
+         <img src="img/kangasesimerkki1.png">
+            <figcaption><p><strong>Fabric name1</strong></p>
+            <p>Fabric type1</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/kangasesimerkki2.png">
+            <figcaption><p><strong>Fabric name2</strong></p>
+            <p>Fabric type2</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/kangasesimerkki1.png">
+            <figcaption><p><strong>Fabric name1</strong></p>
+            <p>Fabric type1</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/kangasesimerkki2.png">
+            <figcaption><p><strong>Fabric name2</strong></p>
+            <p>Fabric type2</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/kangasesimerkki1.png">
+            <figcaption><p><strong>Fabric name1</strong></p>
+            <p>Fabric type1</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/kangasesimerkki2.png">
+            <figcaption><p><strong>Fabric name2</strong></p>
+            <p>Fabric type2</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+            </div>
+            <div class="app-button" data-target="fabric2-page">more fabrics</div>
+          <div class="app-button" data-target="steps-page">back to shirt details</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="fabric2-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+        <h3>Select fabric (2/2) - Spring/summer 2017 specials</h3>
+        <figure>
+         <img src="img/kangasesimerkki1.png">
+            <figcaption><p><strong>Fabric name3</strong></p>
+            <p>Fabric type3</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure>
+         <img src="img/kangasesimerkki2.png">
+            <figcaption><p><strong>Fabric name3</strong></p>
+            <p>Fabric type3</p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+            <div class="clear"></div>
+            <div class="clear"></div>
+          <div class="app-button" data-target="fabric-page">back</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="fabric3-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+            <div id="chosen-fabric"></div>
+            <div class="app-button green" id="chosen-fabric-select">Select</div>
+          <div class="app-button" data-target="fabric-page">back</div>
+          </div>
+        </div>
+      </div>
+
+        <div class="app-page" data-page="collar-page">
+        <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Select a Collar</h3>
+        <div class="choice-container">
+        <figure class="inline">
+         <img src="img/Bussiness%20superior.png">
+            <figcaption><p><strong>Bussiness superior</strong></p>
+            <p>Our standard collar. Great for the office with or without a tie.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Button-down%20Classic.png">
+            <figcaption><p><strong>Button-down classic</strong></p>
+            <p>The timeless classic collar for a smart casual look.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Button-down%20Modern.png">
+            <figcaption><p><strong>Button-down Modern</strong></p>
+            <p>Lower cut and wider spread than the original. Casual and fashionable.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Bussiness%20superior.png">
+            <figcaption><p><strong>Bussiness superior</strong></p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Button-down%20Classic.png">
+            <figcaption><p><strong>Button-down classic</strong></p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Button-down%20Modern.png">
+            <figcaption><p><strong>Button-down Modern</strong></p>
+            <p>Description text</p>
+            </figcaption>
+            </figure>
+            </div>
+          <div class="app-button" data-target="steps-page">back to shirt details</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="collar-select-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+        <h3>Select a Collar</h3>
+        <div id="chosen-collar"></div>
+        <div class="app-button green select-button" id="chosen-collar-select" data-target="steps-page">Select</div>
+          <div class="app-button" data-target="steps-page">back</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="cuff-page">
+        <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Select a Cuff</h3>
+        <div class="choice-container">
+        <figure class="inline">
+         <img src="img/Single%20button%20rounded.png">
+            <figcaption><p><strong>Single button rounded</strong></p>
+            <p>A customer favorite. Rounded points.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Single%20button%20beveled.png">
+            <figcaption><p><strong>Single button beveled</strong></p>
+            <p>A customer favorite. Beveled points.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Single%20button%20straight.png">
+            <figcaption><p><strong>Single button straight</strong></p>
+            <p>A customer favorite. Straight points.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Single%20button%20rounded.png">
+            <figcaption><p><strong>Single button rounded</strong></p>
+            <p>A customer favorite. Rounded points.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Single%20button%20beveled.png">
+            <figcaption><p><strong>Single button beveled</strong></p>
+            <p>A customer favorite. Beveled points.</p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Single%20button%20straight.png">
+            <figcaption><p><strong>Single button straight</strong></p>
+            <p>A customer favorite. Straight points.</p>
+            </figcaption>
+            </figure>
+            </div>
+          <div class="app-button" data-target="steps-page">back to shirt details</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="cuff-select-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+        <h3>Select a Cuff</h3>
+            <div id="chosen-cuff"></div>
+        <div class="app-button green select-button" id="chosen-cuff-select" data-target="steps-page">Select</div>
+          <div class="app-button" data-target="steps-page">back</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="placket-page">
+        <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Select a Placket</h3>
+        <div class="choice-container">
+        <figure class="inline">
+         <img src="img/With%20placket.png">
+            <figcaption><p><strong>With placket</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Without%20placket.png">
+            <figcaption><p><strong>Without placket</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Hidden%20buttons.png">
+            <figcaption><p><strong>Hidden buttons</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/With%20placket.png">
+            <figcaption><p><strong>With placket</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Without%20placket.png">
+            <figcaption><p><strong>Without placket</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+        <figure class="inline">
+         <img src="img/Hidden%20buttons.png">
+            <figcaption><p><strong>Hidden buttons</strong></p>
+            <p></p>
+            </figcaption>
+            </figure>
+            </div>
+          <div class="app-button" data-target="steps-page">back to shirt details</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="placket-select-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+        <h3>Select a Placket</h3>
+            <div id="chosen-placket"></div>
+        <div class="app-button green select-button" id="chosen-placket-select" data-target="steps-page">Select</div>
+          <div class="app-button" data-target="steps-page">back</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="basket-page">
+      <div class="app-content page" id="basket-content">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+            <br>
+        <h3 class="margin-top5">My Shirts</h3>
+            <br>
+        <div class="app-button green margin-bottom" id="add-new-shirt">Add new shirt</div>
+            <br>
+        <div class="basket-container">
+        <div class="margin-top non-visible inline float" id="shirt10">
+            <div class="column-left">
+                <p id="shirt10-fabricname"></p>
+                <p id="shirt10-collarname"></p>
+                <p id="shirt10-cuffname"></p>
+                <p id="shirt10-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt10-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt10">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible inline float" id="shirt9">
+            <div class="column-left">
+                <p id="shirt9-fabricname"></p>
+                <p id="shirt9-collarname"></p>
+                <p id="shirt9-cuffname"></p>
+                <p id="shirt9-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt9-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt9">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible inline float" id="shirt8">
+            <div class="column-left">
+                <p id="shirt8-fabricname"></p>
+                <p id="shirt8-collarname"></p>
+                <p id="shirt8-cuffname"></p>
+                <p id="shirt8-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt8-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt8">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible inline float" id="shirt7">
+            <div class="column-left">
+                <p id="shirt7-fabricname"></p>
+                <p id="shirt7-collarname"></p>
+                <p id="shirt7-cuffname"></p>
+                <p id="shirt7-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt7-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt7">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible inline float" id="shirt6">
+            <div class="column-left">
+                <p id="shirt6-fabricname"></p>
+                <p id="shirt6-collarname"></p>
+                <p id="shirt6-cuffname"></p>
+                <p id="shirt6-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt6-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt6">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible inline float" id="shirt5">
+            <div class="column-left">
+                <p id="shirt5-fabricname"></p>
+                <p id="shirt5-collarname"></p>
+                <p id="shirt5-cuffname"></p>
+                <p id="shirt5-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt5-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt5">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible float" id="shirt4">
+            <div class="column-left">
+                <p id="shirt4-fabricname"></p>
+                <p id="shirt4-collarname"></p>
+                <p id="shirt4-cuffname"></p>
+                <p id="shirt4-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt4-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt4">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible float" id="shirt3">
+            <div class="column-left">
+                <p id="shirt3-fabricname"></p>
+                <p id="shirt3-collarname"></p>
+                <p id="shirt3-cuffname"></p>
+                <p id="shirt3-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt3-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt3">Remove</div>
+              </div>
+          </div>
+
+          <div class="margin-top non-visible float" id="shirt2">
+            <div class="column-left">
+                <p id="shirt2-fabricname"></p>
+                <p id="shirt2-collarname"></p>
+                <p id="shirt2-cuffname"></p>
+                <p id="shirt2-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt2-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt2">Remove</div>
+              </div>
+          </div>
+
+
+
+        <div class="margin-top non-visible float" id="shirt1">
+            <div class="column-left">
+                <p id="shirt1-fabricname"></p>
+                <p id="shirt1-collarname"></p>
+                <p id="shirt1-cuffname"></p>
+                <p id="shirt1-placketname"></p>
+                <p>with pocket</p>
+                <p>other extra</p>
+              </div>
+            <div class="column-right">
+                <p><strong>Amount</strong>
+
+                    <select class="1-30" id="shirt1-amount">
+
+                     </select>
+                </p>
+                <div class="margin-top10px"></div>
+                <div class="app-button yellow" id="remove-shirt1">Remove</div>
+              </div>
+          </div>
+
+         </div>
+        <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-page" data-page="modify-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+         <h3>Modify shirt details</h3>
+        <div id="steps-div2">
+        <div class="inline-block">Fabric
+
+            <div class="app-button green" id="confirmed-fabric-select" data-target="fabric-page">Choose</div>
+            <pre width="12" id="confirmed-fabric-name">
+
+            </pre>
+            <div><img id="confirmed-fabric-image" class="blank-image" src="img/white.jpg"></div>
+            </div>
+
+
+        <div class="inline-block">Collar
+            <div class="app-button green" id="confirmed-collar-select" data-target="collar-page">Choose</div>
+            <pre width="12" id="confirmed-collar-name">
+
+            </pre>
+            <div><img id="confirmed-collar-image" class="blank-image" src="img/white.jpg"></div>
+
+
+            </div>
+
+
+
+        <div class="inline-block">Cuff
+            <div class="app-button green" id="confirmed-cuff-select" data-target="cuff-page">Choose</div>
+            <pre width="12" id="confirmed-cuff-name">
+
+            </pre>
+            <div><img id="confirmed-cuff-image" class="blank-image" src="img/white.jpg"></div>
+
+            </div>
+
+        <div class="inline-block">Placket
+            <div class="app-button green" id="confirmed-placket-select" data-target="placket-page">Choose</div>
+            <pre width="12" id="confirmed-placket-name">
+
+            </pre>
+            <div><img id="confirmed-placket-image" class="blank-image" src="img/white.jpg"></div>
+
+            </div>
+            </div>
+            <div id="discard-button" class="app-button">Discard changes</div>
+            <div id="accept-button" class="app-button">Accept changes</div>
+          <div class="app-button" data-target="signin-page">Sign out</div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="app-page" data-page="shipment-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+        <form>
+                <input class="input"name="name" type="text" placeholder="full name" required>
+                <input class="input" name="number" type="number" placeholder="telephone number" required>
+                <input class="input" id="customer-email" name="email" type="email" placeholder="email address" required>
+                <div class="app-button app-submit" id="register">Register</div>
+            </form>
+            <div class="app-button" data-target="payment-page">forward</div>
+          <div class="app-button" data-target="placket-page">back</div>
+          </div>
+        </div>
+      </div>
+
+    <div class="app-page" data-page="payment-page">
+      <div class="app-content page">
+        <div class="app-section section">
+          <h1>Shirt App</h1>
+            <div class="app-button" data-target="">forward</div>
+          <div class="app-button" data-target="shipment-page">back</div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    var $select = $('.1-30');
+for (i = 1; i <= 30; i++) {
+  $select.append(
+    $('<option></option>')
+      .val(i)
+      .html(i)
+  );
+}
+</script>
+  </body>
+</html>

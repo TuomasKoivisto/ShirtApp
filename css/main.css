@@ -1,0 +1,442 @@
+.page {
+
+    background-color: white;
+    margin: 0 7px 7px 7px;
+    border: 2px solid black;
+    border-top: none;
+    height: 100%;
+}
+
+.section {
+
+    text-align: center;
+    border-bottom: none;
+    font-size: 0;
+}
+
+#starting-page-content {
+
+    padding: 10%;
+
+
+}
+
+#starting-page-section {
+
+    /*text-align: center;
+    margin:auto;
+    border-bottom: none;
+    width: 90%; */
+
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+h1 {
+
+   font-family: "Lucida Console", Monaco, monospace;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+
+}
+
+h2 {
+
+    font-weight: 200;
+    font-size: 30px;
+
+}
+
+div {
+
+    font-size: 25px;
+}
+
+#logo {
+
+
+    width: 120px;
+}
+
+
+#signin-page-section {
+
+    border-bottom: none;
+
+}
+
+.input {
+
+    width: 80%;
+    max-width: 300px;
+    font-size: 20px;
+    margin: 0.5% !important;
+    border-radius: 4%;
+    border-color: black;
+    text-align: left;
+}
+
+.input:focus {
+
+    background-color: rgb(235,255,255);
+}
+
+.input[type=number]::-webkit-inner-spin-button,
+.input[type=number]::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+#submit {
+
+
+    margin-top: 15px;
+    text-align: center;
+    background: rgb(100,200,255); /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(rgb(100,200,255), rgb(130,230,255)); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgb(100,200,255), rgb(130,230,255)); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(rgb(100,200,255) rgb(130,230,255)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgb(100,200,255) rgb(130,230,255)); /* Standard syntax */
+    border-color: rgb(80,180,255);
+    width: 81%;
+    max-width: 300px;
+    font-size: 20px;
+    color: white;
+    }
+
+
+#not-registered {
+
+    font-size: 15px;
+    color: blue;
+}
+
+p {
+
+    font-size: 15px;
+}
+
+#register-content {
+
+   padding-top: 15px;
+    min-width: 250px;
+    width: 50%;
+    margin: 0 auto;
+   font-size: 0;
+}
+
+#register {
+
+    margin-top: 10px;
+    text-align: center;
+    background: rgb(100,200,255); /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(rgb(100,200,255), rgb(130,230,255)); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(rgb(100,200,255), rgb(130,230,255)); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(rgb(100,200,255) rgb(130,230,255)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(rgb(100,200,255) rgb(130,230,255)); /* Standard syntax */
+    border-color: rgb(80,180,255);
+    width: 81%;
+    max-width: 300px;
+    font-size: 20px;
+    color: white;
+}
+
+#already-registered {
+
+    font-size: 15px;
+    color: blue;
+}
+/*
+.step {
+
+    color: black !important;
+    border: 0.1em solid black !important;
+    margin: 3% !important;
+    font-size: 5vw;
+    padding: 1%;
+} */
+/*
+#steps-div {
+
+    margin: 8% 5% 7% 3%;
+    width: 80%;
+    text-align: center;
+
+} */
+
+#steps-div2 {
+
+    text-align: center;
+
+}
+
+.inline-block {
+
+    display: inline-block;
+    width: 45%;
+    height: 30% !important;
+    margin: 5% 0;
+    border: 2px solid grey;
+}
+
+.blank-image {
+
+    height: 15vh;
+    width: 10vw;
+    border: none !important;
+}
+/*
+#active-step {
+
+    background-color: rgb(120,220,255) !important;
+} */
+/*
+#left-align {
+
+    text-align: left !important;
+    margin-right: 5%;
+} */
+/*
+.step-number {
+
+    margin-top: 5%;
+    margin-left: 13% !important;
+    position: relative;
+    float:left;
+    border: 0.1em solid rgb(80,180,255) !important;
+    border-radius: 50% !important;
+    padding: 2% 2%!important;
+    color: black !important;
+    background-color: rgb(210,230,255) !important;
+    width: 5%;
+
+} */
+
+h3 {
+
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.float {
+
+    position: relative !important;
+    float: left !important;
+}
+
+.clear {
+
+    clear:both !important;
+}
+
+.choice-container {
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.basket-container {
+
+    width: 100%;
+}
+
+.inline {
+
+    display: inline-block;
+}
+
+figure {
+
+    width: 100px;
+    margin: 3%;
+    padding: 0;
+}
+
+#chosen-fabric, #chosen-collar, #chosen-cuff, #chosen-placket {
+
+    pointer-events: none;
+
+}
+
+#chosen-fabric-select, #chosen-collar-select, #chosen-cuff-select, #chosen-placket-select, {
+
+    margin-top: 2% !important;
+}
+
+figcaption p:last-child {
+
+    display: none;
+}
+
+.visible {
+
+    display: block;
+}
+
+li {
+
+    height: 50% !important;
+    padding: 3% 0 !important;
+    list-style-type: none;
+}
+
+li p {
+
+    margin-left: 2% !important;
+
+}
+
+.select-button {
+
+    margin-top: 0 !important;
+}
+
+.non-visible {
+
+    display: none;
+}
+
+span {
+
+    padding-top: 1%;
+}
+
+pre {
+
+    font-size: 3vw;
+    text-align: center;
+    width: 12;
+    margin 6px 3px;
+    font-family: sans-serif;
+
+}
+
+#add-to-basket {
+
+    display: none;
+
+}
+
+.column-left {
+
+    float: left;
+    width: 60%;
+    max-width: 250px;
+    text-align: left !important;
+
+}
+
+.column-right {
+
+    float: left;
+    width: 40%;
+    max-width: 350px;
+
+}
+
+.margin-top {
+
+    margin: 2% 4%!important;
+}
+
+.margin-top10 {
+
+   margin-top: 10% !important;
+}
+
+.margin-top5 {
+
+   margin-top: 5% !important;
+}
+
+.margin-top10px {
+
+    margin-top: 10px;
+}
+
+div div div div p {
+
+    padding-bottom: 5px;
+}
+
+.margin-bottom {
+
+    margin-bottom: : 4% !important;
+}
+
+select {
+
+    font-size: 17px;
+    width: 80px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+form {
+
+    font-size: 0;
+
+}
+
+img {
+
+    width: 100px;
+}
+
+ul li img {
+
+    width: 100px;
+}
+/*
+#basket-container {
+
+    margin: 0 auto;
+    min-width: 200px;
+    width: 70%;
+} */
+
+@media (min-width: 700px) {
+
+    #logo {
+
+
+    width: 200px;
+    }
+
+
+
+    h1 {
+
+   font-family: "Marbrook BQ Regular";
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    }
+
+    h2 {
+
+        font-weight: 200;
+        font-size: 40px;
+
+    }
+
+    div {
+
+        font-size: 25px;
+    }
+
+    img, figure, ul li img {
+
+        width: 150px;
+    }
+
+}
