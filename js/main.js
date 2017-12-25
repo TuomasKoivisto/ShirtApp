@@ -46,37 +46,8 @@ function saveAmount() {
     }
   }
 }
-/*
-document.addEventListener("touchstart", function(e) {
-console.log(e.defaultPrevented);  // will be false
-e.preventDefault();   // does nothing since the listener is passive
-console.log(e.defaultPrevented);  // still false
-}, Modernizr.passiveeventlisteners ? {passive: true} : false);
-
-
-document.addEventListener( "touchmove", function(e) {
-console.log(e.defaultPrevented);  // will be false
-e.preventDefault();   // does nothing since the listener is passive
-console.log(e.defaultPrevented);  // still false
-}, Modernizr.passiveeventlisteners ? {passive: true} : false);
-*/
-
 App.controller('start-screen', function(page) {
   this.transition = 'fade';
-  /*
-     if (typeof(Storage) !== "underfined") {
-
-         console.log("local storage is go");
-         localStorage.setItem("name", "Tuomas");
-         console.log(localStorage.getItem("name"));
-
-
-        var names = [];
-        names[0] = prompt("New member name?");
-        localStorage.setItem("names", JSON.stringify(names));
-
-         var storedNames = JSON.parse(localStorage.getItem("names"));
-     } */
 });
 
 App.controller('signin-page', function(page) {
@@ -86,65 +57,6 @@ App.controller('signin-page', function(page) {
 
 App.controller('register-page', function(page) {
   this.transition = 'fade';
-
-  /*
-
-    if (typeof localStorage !== 'undefined') {
-
-        if(localStorage.getItem('customer-email') !== null) {
-
-            $(page).find('#customer-email').val(localStorage.getItem('customer-email'));
-        }
-    };
-    */
-
-  $(page)
-    .find('#register')
-    .clickable()
-    .on('click', function() {
-      $.ajax({
-        type: 'GET',
-        url:
-          'http://tuomaskoivistonhostingpackage-com.stackstaging.com/schoffa/sendemail.php?callback=response',
-        // data to be added to query string:
-        data: {
-          to: 'koivisto.tuomas@gmail.com',
-          from: 'koivisto.tuomas@gmail.com',
-          subject: 'Asiakas pyytää tunnuksia',
-          message: 'moi'
-        },
-        // type of data we are expecting in return:
-        dataType: 'jsonp',
-        timeout: 300,
-        context: $('body'),
-        success: function(data) {
-          if (data.success == true) {
-            $(page)
-              .find('#message')
-              .html('Your registration request was sent succesfully!');
-          } else {
-            $(page)
-              .find('#message')
-              .html('Your registration request failed!');
-          }
-        },
-        error: function(xhr, type) {
-          $(page)
-            .find('#message')
-            .html('Your registration request failed!');
-        }
-      });
-      /*
-        if (typeof localStorage !== 'undefined') {
-
-            localStorage.setItem('customer-email', $('#customer-email').val());
-
-        } else {
-
-
-
-        } */
-    });
 });
 
 App.controller('steps-page', function(page) {
@@ -358,19 +270,10 @@ App.controller('fabric3-page', function(page) {
     .clickable()
     .on('click', function() {
       if (typeof localStorage !== 'undefined') {
-        //  var fabricImage = $('#chosen-fabric img').attr('src');
-
         localStorage.setItem(
           'fabricImage',
           $('#chosen-fabric img').attr('src')
         );
-        /*
-            var imgSource = localStorage.getItem('fabricImage');
-
-            $('#confirmed-fabric-image').attr('src', imgSource);
-
-            $('#confirmed-fabric-image').css('width', '30vw'); */
-
         localStorage.setItem('fabricName', $('#chosen-fabric strong').html());
 
         App.load('steps-page');
@@ -380,23 +283,10 @@ App.controller('fabric3-page', function(page) {
 
 App.controller('collar-page', function(page) {
   this.transition = 'fade';
-  /*
-    $(page).find('li').clickable().on('click', function() {
-
-
-        App.load('collar-select-page');
-       $('#chosen-collar').html($(this));
-       $('p', '#chosen-collar').css('display','block');
-        $('li','#chosen-collar').css('border-bottom', 'none');
-        $('span', '#chosen-collar').css('display','block');
-
-    }); */
-
   $(page)
     .find('figure')
     .clickable()
     .on('click', function() {
-      // $(this).css('display','block');
       App.load('collar-select-page');
       $('#chosen-collar').html($(this).clone());
       $('p', '#chosen-collar').css('display', 'block');
@@ -410,19 +300,10 @@ App.controller('collar-select-page', function(page) {
     .clickable()
     .on('click', function() {
       if (typeof localStorage !== 'undefined') {
-        //  var fabricImage = $('#chosen-fabric img').attr('src');
-
         localStorage.setItem(
           'collarImage',
           $('#chosen-collar img').attr('src')
         );
-        /*
-            var imgSource = localStorage.getItem('fabricImage');
-
-            $('#confirmed-fabric-image').attr('src', imgSource);
-
-            $('#confirmed-fabric-image').css('width', '30vw'); */
-
         localStorage.setItem('collarName', $('#chosen-collar strong').html());
 
         App.load('steps-page');
@@ -433,20 +314,10 @@ App.controller('collar-select-page', function(page) {
 App.controller('cuff-page', function(page) {
   this.transition = 'fade';
 
-  /*
-    $(page).find('li').clickable().on('click', function() {
-        App.load('cuff-select-page');
-       $('#chosen-cuff').html($(this));
-       $('p', '#chosen-cuff').css('display','block');
-        $('li','#chosen-cuff').css('border-bottom', 'none');
-
-    }); */
-
   $(page)
     .find('figure')
     .clickable()
     .on('click', function() {
-      // $(this).css('display','block');
       App.load('cuff-select-page');
       $('#chosen-cuff').html($(this).clone());
       $('p', '#chosen-cuff').css('display', 'block');
@@ -472,20 +343,10 @@ App.controller('cuff-select-page', function(page) {
 App.controller('placket-page', function(page) {
   this.transition = 'fade';
 
-  /*
-   $(page).find('li').clickable().on('click', function() {
-        App.load('placket-select-page');
-       $('#chosen-placket').html($(this));
-       $('p', '#chosen-placket').css('display','block');
-        $('li','#chosen-placket').css('border-bottom', 'none');
-
-    });  */
-
   $(page)
     .find('figure')
     .clickable()
     .on('click', function() {
-      // $(this).css('display','block');
       App.load('placket-select-page');
       $('#chosen-placket').html($(this).clone());
       $('p', '#chosen-placket').css('display', 'block');
@@ -513,8 +374,6 @@ App.controller('placket-select-page', function(page) {
 
 App.controller('basket-page', function(page) {
   this.transition = 'fade';
-
-  //saveAmount();
 
   for (i = 1; i <= 10; i++) {
     if (localStorage.getItem('fabricName' + i.toString()) !== '') {
@@ -547,14 +406,7 @@ App.controller('basket-page', function(page) {
             $(this).attr('selected', 'selected');
           }
         });
-      /*
-       if ($(page).find("#shirt" + i.toString() + "-amount option").val() == shirtAmount.toString()) {
-
-
-          $(this).attr('selected', 'selected'); */
     }
-
-    // $(page).find("#shirt" + i.toString() + "-amount option").val(shirtAmount).html(shirtAmount).attr('selected', 'selected');
   }
 
   if (localStorage.getItem('addedShirt') != undefined) {
