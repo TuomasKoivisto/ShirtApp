@@ -26,14 +26,15 @@ for (i = 1; i <= 10; i++) {
   localStorage.setItem('placketName' + i.toString(), '');
 }
 
-var $select = $('.1-30');
-
-for (i = 1; i <= 30; i++) {
-  $select.append(
-    $('<option></option>')
-      .val(i)
-      .html(i)
-  );
+function addSelectValues(page) {
+  $select = $(page).find('.1-30');
+  for (i = 1; i <= 30; i++) {
+    $select.append(
+      $('<option></option>')
+        .val(i)
+        .html(i)
+    );
+  }
 }
 
 function saveAmount() {
@@ -374,7 +375,7 @@ App.controller('placket-select-page', function(page) {
 
 App.controller('basket-page', function(page) {
   this.transition = 'fade';
-
+  addSelectValues(page);
   for (i = 1; i <= 10; i++) {
     if (localStorage.getItem('fabricName' + i.toString()) !== '') {
       $(page)

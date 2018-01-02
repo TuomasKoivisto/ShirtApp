@@ -31,7 +31,7 @@
         <form>
               <input class="input" type="email" placeholder="username" required><br>
               <input class="input" type="password" placeholder="password" required><br>
-            <div class="app-button app-submit" id="submit">Sign In</div>
+            <div class="app-button app-submit" id="submit" data-target="steps-page">Sign In</div>
         </form>
         <div class="app-button" id="not-registered" data-target="register-page">Not registered yet?
             </div>
@@ -54,7 +54,7 @@
                 <input class="input"name="name" type="text" placeholder="full name" required>
                 <input class="input" name="number" type="number" placeholder="telephone number" required>
                 <input class="input" name="email" type="email" placeholder="email address" required>
-                <div class="app-button app-submit" id="register">Register</div>
+                <div class="app-button app-submit" id="register" data-target="steps-page">Register</div>
             </form>
             <div class="app-button" id="already-registered" data-target="signin-page">Sign In
             </div>
@@ -607,7 +607,6 @@
                 <p><strong>Amount</strong>
 
                     <select class="1-30" id="shirt1-amount">
-
                      </select>
                 </p>
                 <div class="margin-top10px"></div>
