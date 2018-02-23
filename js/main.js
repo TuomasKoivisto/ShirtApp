@@ -43,7 +43,6 @@ function saveAmount() {
       var sel = document.getElementById('shirt' + i.toString() + '-amount');
       var amount = sel.options[sel.selectedIndex].value;
       localStorage.setItem('shirt' + i.toString() + '-amount', amount);
-      console.log(localStorage.getItem('shirt' + i.toString() + '-amount'));
     }
   }
 }

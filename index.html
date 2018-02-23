@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>The Shirt App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
@@ -13,7 +13,7 @@
     <div class="app-page" data-page="start-screen">
       <div class="app-content page" id="starting-page-content">
           <div class="app-section section" id="starting-page-section">
-             <img src="img/logo.png" id="logo">
+             <img src="img/logo.png" id="logo" alt="shirtapp logo">
               <h2>the</h2>
               <br>
               <h1>Shirt App</h1>
@@ -51,7 +51,7 @@
             <p>If you wish to register for this app, please fill your email address below and we will be in touch with you.</p>
             <div class="margin-top10"></div>
             <form>
-                <input class="input"name="name" type="text" placeholder="full name" required>
+                <input class="input" name="name" type="text" placeholder="full name" required>
                 <input class="input" name="number" type="number" placeholder="telephone number" required>
                 <input class="input" name="email" type="email" placeholder="email address" required>
                 <div class="app-button app-submit" id="register" data-target="steps-page">Register</div>
@@ -73,19 +73,19 @@
         <div class="inline-block">Fabric
 
             <div class="app-button green" id="confirmed-fabric-select" data-target="fabric-page">Choose</div>
-            <pre width="12" id="confirmed-fabric-name">
+            <pre id="confirmed-fabric-name">
 
             </pre>
-            <div><img id="confirmed-fabric-image" class="blank-image" src="img/white.jpg"></div>
+            <div><img id="confirmed-fabric-image" class="blank-image" src="img/white.jpg" alt="confirmed fabric"></div>
             </div>
 
 
         <div class="inline-block">Collar
             <div class="app-button green" id="confirmed-collar-select" data-target="collar-page">Choose</div>
-            <pre width="12" id="confirmed-collar-name">
+            <pre id="confirmed-collar-name">
 
             </pre>
-            <div><img id="confirmed-collar-image" class="blank-image" src="img/white.jpg"></div>
+            <div><img id="confirmed-collar-image" class="blank-image" src="img/white.jpg" alt="confirmed collar"></div>
 
 
             </div>
@@ -94,19 +94,19 @@
 
         <div class="inline-block">Cuff
             <div class="app-button green" id="confirmed-cuff-select" data-target="cuff-page">Choose</div>
-            <pre width="12" id="confirmed-cuff-name">
+            <pre id="confirmed-cuff-name">
 
             </pre>
-            <div><img id="confirmed-cuff-image" class="blank-image" src="img/white.jpg"></div>
+            <div><img id="confirmed-cuff-image" class="blank-image" src="img/white.jpg" alt="confirmed cuff"></div>
 
             </div>
 
         <div class="inline-block">Placket
             <div class="app-button green" id="confirmed-placket-select" data-target="placket-page">Choose</div>
-            <pre width="12" id="confirmed-placket-name">
+            <pre id="confirmed-placket-name">
 
             </pre>
-            <div><img id="confirmed-placket-image" class="blank-image" src="img/white.jpg"></div>
+            <div><img id="confirmed-placket-image" class="blank-image" src="img/white.jpg" alt="confirmed placket"></div>
 
             </div>
 
@@ -620,85 +620,7 @@
         </div>
       </div>
 
-      <div class="app-page" data-page="modify-page">
-      <div class="app-content page">
-        <div class="app-section section">
-          <h1>Shirt App</h1>
-         <h3>Modify shirt details</h3>
-        <div id="steps-div2">
-        <div class="inline-block">Fabric
 
-            <div class="app-button green" id="confirmed-fabric-select" data-target="fabric-page">Choose</div>
-            <pre width="12" id="confirmed-fabric-name">
-
-            </pre>
-            <div><img id="confirmed-fabric-image" class="blank-image" src="img/white.jpg"></div>
-            </div>
-
-
-        <div class="inline-block">Collar
-            <div class="app-button green" id="confirmed-collar-select" data-target="collar-page">Choose</div>
-            <pre width="12" id="confirmed-collar-name">
-
-            </pre>
-            <div><img id="confirmed-collar-image" class="blank-image" src="img/white.jpg"></div>
-
-
-            </div>
-
-
-
-        <div class="inline-block">Cuff
-            <div class="app-button green" id="confirmed-cuff-select" data-target="cuff-page">Choose</div>
-            <pre width="12" id="confirmed-cuff-name">
-
-            </pre>
-            <div><img id="confirmed-cuff-image" class="blank-image" src="img/white.jpg"></div>
-
-            </div>
-
-        <div class="inline-block">Placket
-            <div class="app-button green" id="confirmed-placket-select" data-target="placket-page">Choose</div>
-            <pre width="12" id="confirmed-placket-name">
-
-            </pre>
-            <div><img id="confirmed-placket-image" class="blank-image" src="img/white.jpg"></div>
-
-            </div>
-            </div>
-            <div id="discard-button" class="app-button">Discard changes</div>
-            <div id="accept-button" class="app-button">Accept changes</div>
-          <div class="app-button" data-target="signin-page">Sign out</div>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="app-page" data-page="shipment-page">
-      <div class="app-content page">
-        <div class="app-section section">
-          <h1>Shirt App</h1>
-        <form>
-                <input class="input"name="name" type="text" placeholder="full name" required>
-                <input class="input" name="number" type="number" placeholder="telephone number" required>
-                <input class="input" id="customer-email" name="email" type="email" placeholder="email address" required>
-                <div class="app-button app-submit" id="register">Register</div>
-            </form>
-            <div class="app-button" data-target="payment-page">forward</div>
-          <div class="app-button" data-target="placket-page">back</div>
-          </div>
-        </div>
-      </div>
-
-    <div class="app-page" data-page="payment-page">
-      <div class="app-content page">
-        <div class="app-section section">
-          <h1>Shirt App</h1>
-            <div class="app-button" data-target="">forward</div>
-          <div class="app-button" data-target="shipment-page">back</div>
-          </div>
-        </div>
-      </div>
 
     <script src="js/zepto.js"></script>
     <script src="js/app.min.js"></script>
