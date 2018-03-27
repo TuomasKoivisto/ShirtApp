@@ -1,4 +1,4 @@
-# Piano Sampler
+# Shirt App
 
 Single Page Application demo.
 
